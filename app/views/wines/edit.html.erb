@@ -1,4 +1,4 @@
-<h1> Add Wine</h1>
+<h1> Editing Wine <%= @wine.name %></h1>
 <%= form_for(@wine) do |f| %>
 	<%= f.label :name %> <%= f.text_field :name, autofocus: true %> <br><br>
 	<%= f.label :year %> <%= f.text_field :year %> <br><br>
