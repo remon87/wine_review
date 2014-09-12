@@ -8,3 +8,4 @@
 <p><label>Varietal:</label> <%= @wine.varietal %> </p>
 </article>
 <%= link_to 'Back to All Wines List', wines_path %> OR | <%= link_to 'Edit Wine Info', edit_wine_path(@book) %>
+<br><br> <%= button_to 'Delete Wine', @wine, method: :delete, data: {confirm: 'Are you sure you want to delete this wine?'} %>
